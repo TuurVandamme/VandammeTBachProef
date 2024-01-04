@@ -1,18 +1,189 @@
 \chapter{\IfLanguageName{dutch}{Stand van zaken}{State of the art}}%
 \label{ch:stand-van-zaken}
 
+Robotic Process Automation (RPA) is de laatste jaren opgekomen als een van de belangrijkste nieuwe technologiën op het vlak van automatiseringen en digitale transformatie. RPA maakt gebruik van software 'robots' om repetitieve, tijdrovende en foutgevoelige taken te automatiseren. Hierdoor kunnen bedrijven hun processen efficiënter maken, kosten verlagen en productiviteit verhogen. RPA zorgt er ook voor dat werknemers zich niet meer hoeven te focussen op deze taken, waardoor ze zich, volgens het onderzoek van \textcite{ZalewskaTurzynska2022} meer kunnen focussen op het creëren van meerwaarde en zich kunnen focussen op inovatievere taken. Omdat RPA meer blijkt te zijn dan een nieuw buzzwoord en hierdoor in verschillende sectoren aan populariteit blijft winnen, is het een onderwerp waar er recent veel belangstelling aan wordt gehecht.
+
 % Tip: Begin elk hoofdstuk met een paragraaf inleiding die beschrijft hoe
 % dit hoofdstuk past binnen het geheel van de bachelorproef. Geef in het
 % bijzonder aan wat de link is met het vorige en volgende hoofdstuk.
 
-% Pas na deze inleidende paragraaf komt de eerste sectiehoofding.
+% Pas na deze inleidende paragraaf komt de eerste sectiehoofding. 
 
-Dit hoofdstuk bevat je literatuurstudie. De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
+% \section{Robotic Process Automation in 2024}
 
-Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz.\ naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\LaTeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin (narratieve referentie), gebruik je \texttt{$\backslash${}textcite\{\}}. Soms is de auteursnaam niet expliciet een onderdeel van de zin, dan gebruik je \texttt{$\backslash${}autocite\{\}} (referentie tussen haakjes). Dit gebruik je bv.~bij een citaat, of om in het bijschrift van een overgenomen afbeelding, broncode, tabel, enz. te verwijzen naar de bron. In de volgende paragraaf een voorbeeld van elk.
+Het onderwerp van deze bachelorproef is het analyseren van Robotic Process Automation, de verschillende verkopers van deze software en dit toepassen op een process voor het consultancy bedrijf delaware. In een eerste deel kijken we hoe RPA precies ontstaan is, wat het inhoud en welke processen in aanmerking komen op geautomatiseerd te worden. In een tweede deel onderzoeken we de voor- en nadelen van de verschillende RPA-software verdelers.
 
-\textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
+\section{Robotic Process Automation}
 
-Let er ook op: het \texttt{cite}-commando voor de punt, dus binnen de zin. Je verwijst meteen naar een bron in de eerste zin die erop gebaseerd is, dus niet pas op het einde van een paragraaf.
+Robotic Process Automation is nog steeds een relatief nieuwe technologie. Het verschilt van andere automatiserings-software in de manier waarop het interaggeert met de applicaties. Waar klassieke automatiseringstools 'inside-out' werken en dus in de applicatie-software zelf worden ingewerkt, werkt RPA op een 'outside-in' manier. Dit wil zeggen dat een RPA-automatisering werkt op de presentatielaag van een applicatie. Hier voert de automatisering taken uit zoals een eindgebruiker deze zou uitvoeren, maar volgens \textcite{Bras2023} met een hogere snelheid en precisie. Doordat RPA op deze manier werkt is er een minimale aanpassing nodig om een RPA-automatisering binnen een systeem te implementeren \autocite{Ivancic2019}.
+Deze manier van interageren met de presentatielaag wordt bereikt door middel van agents die software 'robots' kunnen aansturen. Een agent is een hardware-systeem (desktop, laptop, virtual machine, etc.) waarop de RPA-software is geïnstalleerd. Wanneer de RPA-software deze agent in werking zet, zal deze agent een software 'robot' starten die vervolgens het systeem overneemt en de automatisering uitvoert. Deze automatisering is dan in staat om een eindgebruiker van het systeem na te bootsen en via toetsaanslagen en muisbewegingen verschillende taken uit te voeren. Wanneer een deze robot de automatisering heeft uitgevoerd, gaat hij terug in een slaapstand waardoor de gebruiker weer volledige controle krijgt over het hardware-systeem en wacht de agent op een nieuwe taak.
+Zoals besproken door \textcite{Ivancic2019} hebben we bij RPA 2 verschillende soorten robots, attended en unatteded robots. Attended bots zijn software-robots die automatiseringen uitvoeren samen met een gebruiker. De robot voert bepaalde taken uit, maar geeft informatie terug aan een gebruiker die deze output controleerd, kan gebruiken in andere processen, etc. De unattended robots daarentegen, werken volledig autonoom en kunnen hun taak uitvoeren zonder tussenkomst van een gebruiker. Dit zijn vaak complexere taken met een grote hoeveelheid data die zeer repetitief verwerkt moet worden en waar de gebruiker geen meerwaarde van ondervindt om deze te controleren.
 
-\lipsum[7-20]
+\section{Het ontstaan van Robotic Process Automation}
+
+\subsection{De begindagen van automatisering}
+
+Het idee om repetitieve, handmatige taken te automatiseren is niet nieuw.
+Automatisering maakt al decennia lang deel uit van de industrie. Sinds de industriële revolutie zijn vele taken die vroeger handmatig werden uitgevoerd, vervangen door machines en robots. Denk hierbij bijvoorbeeld aan de lopende band-productie. Het toepassen van automatiseringstechnieken in bedrijfsprocessen en administratie is echter een recentere ontwikkeling, die we te danken hebben aan deze eerste successen binnen de industrie.
+
+\subsection{Het begin van Robotic Process Automation}
+
+Het succes van automatiseringen in de industrie heeft ervoor gezorgd dat bedrijven ook in andere bedrijfsprocessen onderzoek zijn gestart om deze concepten toe te kunnen passen. Eind jaren 90 werden de eerste software-robots ontwikkeld die routinetaken in de productieomgeving konden automatiseren. Deze software-robots waren echter nog niet van de omvang die we vandaag kennen, maar lijken volgens \textcite{ZalewskaTurzynska2022} meer op de huidige 'macros' die we kennen vanuit Microsoft Excel. Deze software-robots konden repetitieve taken uitvoeren in 1 applicatie, maar waren niet in staat om verschillende applicaties aan te spreken. Maar zelfs bij het automatiseren van deze eenvoudige, repetitieve basistaken, zoals gegevensinvoer en basisprocesbeheer, werd RPA toch al snel gezien als een waardevol hulpmiddel om de efficiëntie te verhogen en kosten te verlagen.
+
+Sinds midden 2000 werd deze automatisering door verschillende bedrijven uitgebreid naar de wat we nu kennen als het begin van de Robotic Process Automation. Hierdoor werd het mogelijk om automatiseringen handelingen te laten uitvoeren in verschillende applicaties \autocite{Fluss2020}, waardoor de mogelijkheden van deze automatiseringen snel de lucht in gingen.
+
+Hierdoor begonnen bedrijven de potentie van RPA te zien, maar het is pas later, rond 2010, dat RPA echt aan populariteit begon te winnen.
+
+\subsection{Robotic Process Automation als mainstream technologie}
+
+Zoals hierboven vermeld nam in 2010 het gebruik van RPA-technologiën aanzienlijk toe. Grote bedrijven, die werken met een complex IT-landschap die over de jaren heen bleef groeien, werden zich bewust van de potentiële kostenbesparingen en verbeterde efficiëntie die deze nieuwe technologie bood. De ontwikkeling van cloudgebaseerde RPA-software maakte de technologie ook veel toegankelijker aangezien er nu geen grote investeringen in een uitgebreide IT-infrastructuur meer nodig was.
+
+Sinds 2010 is de RPA-markt elk jaar blijven toenemen. Volgens \textcite{Jiles2020} beginnen bedrijven vaak met RPA in de financiële afdeling, maar dit wordt meestal snel uitgebreid naar de verschillende bedrijfstakken. Door de vele interesse in de RPA technologie zijn de verschillende verdelers van deze software ook gegroeid, waardoor hun software steeds meer functionaliteiten aanbiedt en de mogelijkheden van RPA steeds groter worden. Ook de opkomst van nieuwe technologiën, zoals artificiële intelligentie (AI) en machinaal leren (ML) zorgen ervoor dat RPA steeds meer mogelijkheden biedt.
+
+\subsection{De toekomst van Robotic Process Automation}
+
+De oorsprong van RPA gaat terug tot eind jaren negentig, toen de eerste software-automatiseringen to stand kwamen. In de loop der tijden is RPA geevolueerd van een eenvoudige manier van automatiseren tot een volwaardige, mainstream en multifunctionele technologie waarmee bedrijven verschillende bedrijfprocessen kunnen automatiseren.
+
+De voorbije jaren is de interesse in RPA duidelijk nog steeds toegenomen, aangezien RPA volgens \textcite{Laxmikant2023} een van de top 10 technologische trends is voor de komende 5 tot 10 jaar. Nieuwe technologiën zoals AI en ML, die steeds meer worden toegepast binnen de RPA-software, zorgen opnieuw voor extra mogelijheden binnen de RPA-technologie. Deze mogelijkheden zullen er voor zorgen dat RPA nog complexere taken zal kunnen uitvoeren, waardoor de mogelijkheden voor RPA nog zullen toenemen.
+
+De toekomst voor RPA ziet er veelbelovend uit, aangezien het gezien wordt als een van de tien technologiën die we in de gaten moeten houden in de komende jaren.
+
+\section{Onderliggende technologiën}
+
+Zoals we hierboven hebben besproken is RPA vrij recent ontstaan. Automatiseringen zelf bestaan al een heel stuk langer. De technologiën die RPA mogelijk maken zijn dus ook niet nieuw meer. Hieronder bespreken we de belangrijkste bouwblokken die RPA mogelijk maken.
+
+\subsection{Presentatielaag (GUI)}
+
+We hebben besproken dat RPA op een 'outside-in' manier werkt. RPA gebruikt de presentatielaag zoals een normale gebruiker deze zou gebruiken. Onder presentatielaag verstaan we hier de laag van een applicatie die een gebruiker kan zien, en waarmee hij kan interageren via toetsaanslagen en muisbewegingen \autocite{ZalewskaTurzynska2022}.
+
+\subsection{Screen Scraping}
+
+Screen scraping is een techniek die werd gebruikt om de presentatielaag van een applicatie uit te lezen, waardoor deze gegevens gebruikt kunnen worden in een andere applicatie \autocite{Spencer2018}. Deze techniek wordt ook door RPA gebruikt, maar op een gesofisticeerdere manier. Oudere screen scraping software was niet in staat om elementen van een applicatie te herkennen, maar gebruikte vooral de relatieve positie van elementen om deze te kunnen gebruiken. Dit gaf natuurlijk problemen wanneer de presentatielaag aangepast werd, aangezien de relatieve positie van de elementen dan ook aangepast werd. Hierdoor werd het dus moeilijk om robuuste automatiseringen te maken die niet snel zouden falen. \textcite{Asquith2019} spreekt over de identificatie van de elementen van een bepaalde pagina, waardoor RPA-software weet waarmee het moet interageren, en hierdoor dus minder afhankelijk is van de applicatie-layout en dus foutbestendiger kan werken.
+
+\subsection{Optical Character Recognition (OCR)}
+
+Bij sommige automatiseringen is het ook nodig om verschillende documenten te kunnen uitlezen. OCR is een technologie die het mogelijk maakt om tekst uit verschillende documenten te kunnen lezen. Denk hierbij aan e-mails van klanten, facturen, etc. Dit maakt het mogelijk voor RPA-automatiseringen om ook deze gegevens uit te lezen en te kunnen gebruiken in andere applicaties \autocite{ZalewskaTurzynska2022}.
+
+\subsection{Application Programming Interface (API)}
+
+Een extra voordeel van RPA-software is het feit dat het ook gebruik kan maken van API-calls om data te verzamelen. Dit vergroot de mogelijkheden om nog meer systemen samen te laten werken, op een snellere en robuustere manier. Vooral bij het automatiseren van processen die veel data nodig hebben om taken uit te voeren, is deze extra mogelijkheid volgens \textcite{Hofmann2020} een groot pluspunt in vergelijking met de normale, menselijke gebruikers.
+
+\subsection{Data Extraction}
+
+Hierboven hebben we al gesproken over data uit API-calls, maar RPA-software kan ook moeiteloos data uit andere bronnen halen, zoals Microsoft Excel, PDF, e-mails, etc. \autocite{Andrade2022} Opnieuw is dit een voordeel ten opzichte van menselijke gebruikers, aangezien deze data vaak in grote pakken beschikbaar is en moeilijker leesbaar is voor menselijke gebruikers.
+
+\subsection{Artificiële Intelligentie (AI) en Machinaal Leren (ML)}
+
+In het deel 'Robotic Process Automation als mainstream technologie' hebben we al eens AI en ML vermeld als technologiën die RPA gunstig kunnen beïnvloeden. Deze technologiën worden vaker en vaker ingezet bij RPA-software, waardoor de robots complexere taken kunnen behandelen, die meer intelligentie zullen vereisen. Denk hierbij aan het herkennen van afbeeldingen, teksten en e-mails begrijpen, etc. RPA-software zal ook kunnen leren van zijn eigen fouten, waardoor het mogelijk zal zijn om robuustere automatiseringen te maken, die zichzelf constant zelf kunnen verbeteren \autocite{Taulli2020}.
+
+\section{Robotic Process Automation in de bedrijfswereld}
+
+Als we de voordelen van RPA bekijken, is het niet verbazend dat het de laatste jaren zo aan populariteit heeft gewonnen, vooral in de bedrijfswereld. RPA biedt bedrijven de kans om verschillende processen te automatiseren, waardoor de efficiëntie van deze bedrijven de hoogte kan ingaan. Onderzoek leert ons natuurlijk wel dat niet elk process enven geschikt is om geautomatiseerd te worden, en dat de juiste keuze van processen belangrijk is voor het succes van de implementatie van een RPA-automatisering binnen een bepaald bedrijf. Hieronder bespreken we RPA binnen een bedrijfsomgeving.
+
+\subsection{Stroomlijnen van bedrijfsprocessen}
+
+Bedrijven zijn constant op zoek naar mogelijkheden om hun bedrijfprocessen te verbeteren. Hierbij kunnen verhoogde snelheid, verhoogde efficiëntie en besparingen de drijfveren zijn \autocite{Axmann2022}. Zoals hierboven beschreven, lijkt RPA een ideale oplossing te zijn om deze doelen te bereiken. Elke bedrijf heeft verschillende repetitieve processen die gebasseerd zijn op vaste regels, die werken met een groot volume aan data en die zeer foutgevoelig zijn. Dit zijn nu net de processen die ideaal zijn om geautomatiseerd te worden. Een extra voordeel hiervan is het feit dat de werknemer zich kan bezighouden met taken die meer menselijk inzicht vragen, en dus van grotere waarde zijn voor het bedrijf. Hierdoor stijgt niet alleen de toegevoegde waarde van deze werknemer, wat dan op zich weer zorgt voor een hogere productiviteit.
+
+\subsection{Kostenbesparing}
+
+RPA is natuurlijk niet de enige automatiseringstool op de markt. Een ander pluspunt waardoor bedrijven vaak in de richting van RPA kijken is volgens \textcite{Fernandez2021} de relatief lage kost. Aangezien RPA werkt op de presentatielaag (outside-in) van een applicatie, hoeft deze applicatie zelf niet of amper aangepast worden, waardoor de downtime van een systeem minimaal is en de RPA-automatisering snel kan worden geïmplementeerd en in gebruik worden genomen \autocite{Asquith2019}. Dit is een groot voordeel ten opzichte van de klassiekere automatiseringsmogelijkheden, die vaak grotere investeringen vragen en een hogere implementatieduur hebben. Hierdoor heeft RPA een relatief korte terugverdientijd (ROI), wat voor bedrijven natuurlijk een groot pluspunt is.
+Door deze relatief lage kost is RPA ook niet alleen beschikbaar voor de grote bedrijven en marktleiders, maar zien we dat middelgrote en kleine bedrijven ook steeds meer interesse tonen voor deze technologie.
+
+\section{Verloop van een RPA-project}
+
+Hierboven is al besproken dat RPA met relatief weinig bronnen een hoge ROI kan opleveren.
+Maar daarvoor moet RPA natuurlijk wel op de correcte processen worden toegepast.
+Een bedrijf bevat duizenden processen in zijn dagelijkse werking, dus in deze paragrafen bespreken we welke stappen we volgens \textcite{El-Gharib2023} moeten ondernemen om een RPA-project succesvol te implementeren.
+
+\subsection{Analyse en proces-evalutaie}
+
+De eerste stap binnen het implementatie-process van RPA is het analyseren van de verschillende processen binnen een bedrijf die in aanmerking komen om via RPA geautomatiseerd te worden \autocite{vanDerAalst2018}. Hierbij kijken we naar de frequentie van het process, de complexiteit en of de verschillende stappen binnen het process voldoende gestandardiseerd zijn. Wanneer deze factoren tegen de verschillende processen getoetst zijn, kunnen we per process inschatten hoeveel baat we erbij zouden hebben om deze via RPA te automatiseren, en een ruwe schatting maken van onze ROI. Dit doen we door van de verschillende processen alle stappen grondig te analyseren, kijken waar er verbeteringen kunnen optreden in het process en deze in een flow te gieten. Deze flow kunnen we dan analyseren en gebruiken voor de volgende stappen binnen het project.
+Na de evaluatie van het process is het natuurlijk ook belangrijk om te kijken welke RPA-software het best past bij onze automatisering, en bij bedrijven is het vaak ook belangrijk om te bekijken welke middelen ze in huis hebben. Hierbij kijken we naar licenties, kennis binnen het bedrijf, etc.
+
+\subsection{Planning en design}
+
+Wanneer een process geselecteerd en ge-analyseerd is voor automatisering, kunnen we beginnen aan de planning en het ontwerp van de automatisering \autocite{Fernandez2021}. Vanuit de analyse-stap komt een flow-diagram die het beginpunt kan zijn van het design van de RPA robot. Hierbij wordt gekeken naar de verschillende stappen binnen deze flow en hoe deze best geautomatiseerd kunnen worden binnen de verschillende mogelijkheden van RPA. Wanneer er voor elke stap een oplossing gevonden is, kunnen we een compleet ontwerp maken van de RPA-flow.
+
+\subsection{Ontwikkeling}
+
+In de vorige stap is er een volledig design gemaakt voor de RPA-automatisering. Deze kan nu door de ontwikkelaar gebruikt worden om de RPA robot te ontwikkelen binnen de gekozen RPA-software. Het is belangrijk dat de ontwikkelaar zich bewust is van het process die hij aan het automatiseren is, en niet te ver afdwaalt van de gecreëerde workflow.
+
+\subsection{Testen en validatie}
+
+Wanneer de automatisering ontwikkeld is, is het belangrijk deze voldoende te testen op zowel correctheid als robuustheid \autocite{Liu2023}. Hierbij is het belangrijk dat zowel de 'happy flow' als de 'exception flows' getest worden. Bij de happy flow is het belangrijk te kijken of de stappen die de automatisering moet uitvoeren correct gebeurd zijn, en bij de exception flow is het belangrijk te kijken of de automatisering hier correct op reageert en de juiste informatie geeft aan de gerbuiker. Ook is het belangrijk dat de automatisering in de exception flow geen verkeerde informatie in een systeem heeft binnengebracht.
+In een latere fase van het testen is het mogelijk de RPA-robot in te zetten bij een kleine groep gebruikers of een deel van de uit te voeren processen om te kijken hoe het werkt in de praktijk. Hierna kan bij de gebruikers feedback gevraagd worden, of kunnen de systemen gecontroleerd worden op correcte data.
+
+\subsection{Inzet, onderhoud en monitoring}
+
+Wanneer de RPA-automatisering voldoende getest is kan deze ingezet worden in de volledige praktijk. \textcite{Lievanomartinez2022} beschrijft dat het hierbij natuurlijk belangrijk is dat de gebruikers genoeg opgeleid zijn om te weten hoe de RPA robot werkt, hoe ze hem kunnen gebruiken, welke taken deze overneemt en de robot de nodige middelen heeft om de vooropgestelde taken uit te voeren. Volgens \textcite{vanDerAalst2018} is het natuurlijk ook belangrijk om de RPA-robot te blijven onderhouden, en wanneer er aan de onderliggende systemen aanpassingen worden aangebracht, deze ook opnieuw te controleren op een correcte werking om desastreuze gevolgen te vermijden.
+Maar zelfs wanneer er geen aanpassingen aan het systeem zijn gemaakt, is het belangrijk om de verschillende RPA robots te blijven monitoren. Hierdoor kan de performantie van de robots gecontrolleerd worden, en in een volgende stap opnieuw verbeterd worden.
+
+\section{Verschillende verdelers van Robotic Process Automation software}
+
+RPA is een relatief nieuwe, inovatieve technologie. Hierdoor zijn er veel bedrijven die hun eigen RPA-software aanbieden, waardoor het belangrijk is om de verschillende verdelers met elkaar te vergelijken. \textcite{Carter2023} bespreekt het Gartner RPA Magic Quadrant, en welke bedrijven we moeten zien als marktleiders, visionairs, challengers en niche spelers. Hieronder bespreken we de marktleiders, maar ook een belangrijke visionair-optie die voor delaware een grote meerwaarde kan betekenen.
+
+\subsection{UIPath}
+
+UIPath is Roemeens bedrijf, opgericht in 2005. Het is de marktleider van 2023, waar het de trend van 2022 mee verderzet. Het richt zich vooral op end-to-end processen. Ook is het een van de oplossingen die het verste staat in het integreren van AI binnen hun gebied \autocite{GartnerUIPath2023}.
+
+\subsubsection{Voordelen van UIPath}
+
+\begin{itemize}
+    \item UIPath is een van de oudste en een van de meest geavanceerde RPA oplossingen op de markt.
+    \item UIPath heeft verschillende AI toepassingen geïntegreerd binnen hun volledige platform \autocite{Liliana2022}.
+    \item UIPath heeft verschillende tools beschikbaar die het vinden van automatiseerbare processen binnen een bedrijf makkelijker maken.
+    \item UIPath heeft meerdere out-of-the-box automatiseringen die direct ingezet en gebruikt kunnen worden binnen een bedrijf.
+\end{itemize}
+
+
+\subsection{Blueprism}
+
+Blue Prism is een Brits bedrijf, opgericht in 2001. Het behoort tot de marktleiders van 2023. Blue Prism richt zich vooral op grotere bedrijven. Voor deze bedrijven heeft het ook verschillende connectoren gecreëerd voor veelgebruikte applicaties binnen bedrijven \autocite{GartnerBluePrism2023}. Ook biedt Blue Prism gebundelde services aan voor deze bedrijven, met meerdere robot licenties, een dashboard, etc. Blue Prism richt zich vooral op unattended end-to-end processen \autocite{Laxmikant2023}.
+
+\subsubsection{Voordelen van Blueprism}
+
+\begin{itemize}
+    \item Goed geintegreerde AI en ML toepassingen binnen hun product.
+    \item Makkelijk te schalen, wat belangrijk is voor grotere bedrijven.
+    \item Toepassingen voor het volledige process van RPA-implementatie, van het zoeken naar processen tot het in gebruik nemen van de automatiseringen.
+    \item Vergevorderede Email AI.
+\end{itemize}
+
+\subsection{Automation 360}
+
+Automation 360 is een product van het Amerikaans bedrijf Automation Anywhere, opgericht in 2003. Het behoort tot de marktleiders van 2023. Automation 360 richt zich vooral op attended bots. Het werkt via een cloud-platform, waardoor het relatief goedkoop en makkelijk schaalbaar is \autocite{GartnerAutomationAnywhere2023}.
+
+\subsubsection{Voordelen van Automation 360}
+
+\begin{itemize}
+    \item Focus op attended robots, die gebruikers helpen met hun dagelijkse taken.
+    \item Via hun Process Discovery tool kunnen de processen die het meest baat zullen hebben van automatiseringen ontdekt worden.
+    \item Zowel geschikt voor kleine als middelgrote bedrijven.
+    \item Volledig cloud gericht.
+\end{itemize}
+
+\subsection{Power Automate}
+
+Power Automate is de RPA oplossing van Microsoft. Het behoort ook tot de marktleiders van 2023. Het heeft verschillende connectoren naar verschillende Microsoft producten, wat het aantrekkelijk maakt voor bedrijven die dit ecosysteem gebruiken. Het richt zich zowel op attended als unattended bots \autocite{GartnerMicrosoftPA2023}.
+
+\subsubsection{Voordelen van Power Automate}
+
+\begin{itemize}
+    \item Makkelijke connectoren met verschillende Microsoft producten zoals Azure, Power BI, etc.
+    \item Een groot aantal out-of-the-box automatiseringen en connectoren.
+    \item Goede integratie van API-mogelijkheden.
+    \item AI mogelijkheden binnen zowel de creatie als het gebruik van de RPA.
+\end{itemize}
+
+\subsection{SAP Build Process Automation}
+
+SAP Build Process Automation is de RPA oplossing van SAP. Het behoort tot de visionairs van 2023. Het werkt makkelijk binnen het SAP ecosysteem, maar is zeker niet beperkt tot deze applicaties. Het richt zich zowel op attended als unattended bots \autocite{GartnerSAPBPA2023}.
+
+\subsubsection{Voordelen van SAP Build Process Automation}
+
+\begin{itemize}
+    \item Makkelijke integratie binnen een bestaand SAP Ecosysteem.
+    \item Vlotte process analyse via SAP Signavio.
+    \item Relatief goedkoop wanneer een bedijf binnen het SAP Ecosysteem werkt.
+    \item Goede AI en workflow mogelijkheden.
+\end{itemize}

@@ -3,70 +3,144 @@
 \section{Introductie}%
 \label{sec:introductie}
 
-Waarover zal je bachelorproef gaan? Introduceer het thema en zorg dat volgende zaken zeker duidelijk aanwezig zijn:
+% Waarover zal je bachelorproef gaan? Introduceer het thema en zorg dat volgende zaken zeker duidelijk aanwezig zijn:
+
+% \begin{itemize}
+%   \item kaderen thema
+%   \item de doelgroep
+%   \item de probleemstelling en (centrale) onderzoeksvraag
+%   \item de onderzoeksdoelstelling
+% \end{itemize}
+
+% Denk er aan: een typische bachelorproef is \textit{toegepast onderzoek}, wat betekent dat je start vanuit een concrete probleemsituatie in bedrijfscontext, een \textbf{casus}. Het is belangrijk om je onderwerp goed af te bakenen: je gaat voor die \textit{ene specifieke probleemsituatie} op zoek naar een goede oplossing, op basis van de huidige kennis in het vakgebied.
+
+% De doelgroep moet ook concreet en duidelijk zijn, dus geen algemene of vaag gedefinieerde groepen zoals \emph{bedrijven}, \emph{developers}, \emph{Vlamingen}, enz. Je richt je in elk geval op it-professionals, een bachelorproef is geen populariserende tekst. Eén specifiek bedrijf (die te maken hebben met een concrete probleemsituatie) is dus beter dan \emph{bedrijven} in het algemeen.
+
+% Formuleer duidelijk de onderzoeksvraag! De begeleiders lezen nog steeds te veel voorstellen waarin we geen onderzoeksvraag terugvinden.
+
+% Schrijf ook iets over de doelstelling. Wat zie je als het concrete eindresultaat van je onderzoek, naast de uitgeschreven scriptie? Is het een proof-of-concept, een rapport met aanbevelingen, \ldots Met welk eindresultaat kan je je bachelorproef als een succes beschouwen?
+Klantenservice kent veel kleine, repetitieve taken die tijd in beslag nemen zowel voor de werknemer, als voor de klant. Hierbij kan gedacht worden aan het ophalen van de juiste klantengegevens, de gegevens van collega's op het project of voorbije pogingen om het probleem op te lossen. 
+
+Deze bachelorproef wil onderzoeken of het mogelijk is om via Robotic Process Automation deze taken te automatiseren, zodat de werknemer meer bezig kan zijn met de echte problemen van de klant, en deze dus een betere en snellere klantenservice ontvangt.
+
+De doelgroep van deze bachelorproef zijn de SAP consultants van het bedrijf delaware. Deze werknemers komen dagelijks in contact met klanten, maar aangezien ze als consultants vaak met meerdere klanten werken, kunnen de gegevens van deze klanten soms verward geraken.
+
+De centrale onderzoeksvraag van deze bachelorproef is waar en hoe makkelijk Robotic Process Automation kan ingezet worden tijdens de klantenservice. Concreet heeft deze vraag twee deelvragen: 
 
 \begin{itemize}
-  \item kaderen thema
-  \item de doelgroep
-  \item de probleemstelling en (centrale) onderzoeksvraag
-  \item de onderzoeksdoelstelling
+  \item Welke taken kan Robotic Process Automation automatiseren?
+  \item Welke meerwaarde hebben deze automatiseringen? Hierbij denken we aan tijdwinst en gebruiksgemak voor de consultant.
 \end{itemize}
 
-Denk er aan: een typische bachelorproef is \textit{toegepast onderzoek}, wat betekent dat je start vanuit een concrete probleemsituatie in bedrijfscontext, een \textbf{casus}. Het is belangrijk om je onderwerp goed af te bakenen: je gaat voor die \textit{ene specifieke probleemsituatie} op zoek naar een goede oplossing, op basis van de huidige kennis in het vakgebied.
+De doelstelling van deze bachelorproef is tweeledig. Als eerste zal uitgezocht worden voor welke taken Robotic Process Automation een verbetering kan zijn. Ten tweede zal er ook een Proof of Concept Automation aangemaakt worden voor een van deze taken die makkelijk bruikbaar is voor de consultants van delaware. Hiervoor zal ook bekeken worden of het beter is de technologiën die delaware al heeft te gebruiken (SAP Build Process Automation, UIPath), of er beter gekeken wordt naar andere technologiën, zoals Automation Anywhere en Blue Prism. 
 
-De doelgroep moet ook concreet en duidelijk zijn, dus geen algemene of vaag gedefinieerde groepen zoals \emph{bedrijven}, \emph{developers}, \emph{Vlamingen}, enz. Je richt je in elk geval op it-professionals, een bachelorproef is geen populariserende tekst. Eén specifiek bedrijf (die te maken hebben met een concrete probleemsituatie) is dus beter dan \emph{bedrijven} in het algemeen.
-
-Formuleer duidelijk de onderzoeksvraag! De begeleiders lezen nog steeds te veel voorstellen waarin we geen onderzoeksvraag terugvinden.
-
-Schrijf ook iets over de doelstelling. Wat zie je als het concrete eindresultaat van je onderzoek, naast de uitgeschreven scriptie? Is het een proof-of-concept, een rapport met aanbevelingen, \ldots Met welk eindresultaat kan je je bachelorproef als een succes beschouwen?
+Het al dan niet slagen van deze proof of concept zal op 3 verschillende criteria bekeken worden:
+\begin{itemize}
+  \item Voor de start zal er aan een consultant gevraagd worden wat hij of zij verwacht van het resultaat. De uitgewerkte proof of concept zal dan vergeleken worden met deze vooropgestelde verwachtingen.
+  \item Er zal een kleine test uitgevoerd worden waarin een consultant verschillende kleine taken moet uitvoeren met en zonder de uitgewerkte proof of concept. Hieruit zal de eventuele tijdswinst gemeten kunnen worden.
+  \item Nadat consultants de proof of concept gebruikt hebben zal er gevraagd worden naar hun ervaringen met de proof of concept. Hieruit kan het gebruiksgemak afgeleid worden.
+\end{itemize}
+Uit deze 3 criteria kan dan een finaal oordeel worden gemaakt omtrent de onderzoeksvraag.
 
 %---------- Stand van zaken ---------------------------------------------------
 
 \section{State-of-the-art}%
 \label{sec:state-of-the-art}
 
-Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein, d.w.z.\ een inleidende, doorlopende tekst over het onderzoeksdomein van je bachelorproef. Je steunt daarbij heel sterk op de professionele \emph{vakliteratuur}, en niet zozeer op populariserende teksten voor een breed publiek. Wat is de huidige stand van zaken in dit domein, en wat zijn nog eventuele open vragen (die misschien de aanleiding waren tot je onderzoeksvraag!)?
+\subsection{Wat is Robotic Process Automation}
+\label{Wat is Robotic Process Automation}
+Robotic Process Automation is een manier van processen automatiseren die gebruik maakt van de presentatielaag van applicaties. Hierdoor kan het vergeleken worden met oudere ‘screen-scraping’ concepten. Het grote verschil is dat RPA ook gebruik maakt van machine learning en definiëren van UI-elementen zodat de verkregen automation robuuster is dan zijn voorgangers. 
+Als de lay-out van een pagina wordt aangepast, leert RPA hiermee om te gaan, net zoals een menselijke actor. Hierdoor is het mogelijk om betrouwbaar informatie af te lezen van een scherm en deze in andere applicaties te gebruiken. Deze vorm van ontwikkelen is vaak sneller dan een volledige applicatie te ontwikkelen, waardoor Robotic Process Automation hiervoor een goedkoper alternatief kan zijn. RPA opent zo de mogelijkheid om repetitieve taken te automatiseren en meer tijd vrij te maken voor de werknemers om meer humane en interessantere taken uit te voeren \autocite{Panikkar2022}.
 
-Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek?
+\subsection{Unattended en Attended bots}
+\label{Unattended en Attended bots}
+Er bestaan twee verschillende soorten RPA-bots. Attended bots zijn automations die gebruikt worden om een menselijke gebruiker te assisteren. 
+Unattended bots kunnen gestart worden door een trigger en hebben geen interactie meer nodig op hun process tot een goed einde te brengen. Door het bekijken van de complexiteit van een process kan beslist worden voor een van deze concepten want ze hebben beiden hun voordelen en nadelen.
 
-Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Hykes2013}! Denk zeker goed na welke werken je refereert en waarom.
+\subsection{Waarom RPA}
+\label{Waarom RPA}
+Elk bedrijf heeft veel taken die er baat van zouden hebben geautomatiseerd te worden. Dit kan zorgen voor tijdwinst, maar ook een verbetering in de tevredenheid van de werknemers. Volgens \textcite{blueprism2023} zou bijvoorbeeld 88 procent van de bedrijfsleiders zich gelukkiger voelen als ze zich dankzij automatisering minder op administratief werk hoefden te concentreren. RPA is een eenvoudige en snelle oplossingen om de zeer herhaaldelijke en dus dure taken makkelijk te automatiseren. Hierdoor kunnen bedrijven revalueren welke taken wel geautomatiseerd worden en welke niet. Het feit dat in 2021 al bijna 20 procent van de bedrijven gebruikt maakt van RPA in een bepaalde zin \autocite{CemDilmegani2023}, toon aan hoe belangrijk deze technologie kan worden in de toekomst.
 
-Draag zorg voor correcte literatuurverwijzingen! Een bronvermelding hoort thuis \emph{binnen} de zin waar je je op die bron baseert, dus niet er buiten! Maak meteen een verwijzing als je gebruik maakt van een bron. Doe dit dus \emph{niet} aan het einde van een lange paragraaf. Baseer nooit teveel aansluitende tekst op eenzelfde bron.
+\subsection{RPA-verdelers}
+\label{RPA-verdelers}
+RPA is een vrij nieuwe tool met veel mogelijkheden, dus er is een grote markt aan RPA-verdelers. Deze zijn onder andere:
 
-Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle nodige info aanwezig is om de bron terug te vinden (zoals uitvoerig besproken in de lessen Research Methods).
+\begin{itemize}
+  \item SAP Build Process Automation
+  \item UIPath
+  \item Blue Prism
+  \item Automation Anywhere
+\end{itemize}
 
-% Voor literatuurverwijzingen zijn er twee belangrijke commando's:
-% \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
-%   geen onderdeel is van de zin.
-% \textcite{KEY} => Auteur (jaartal)  Gebruik dit als de auteursnaam wel een
-%   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
-%   ...'')
+Sommige van deze verdelers zijn vooral gericht op een specifiek systeem, zoals SAP Build Process Automation die vooral op SAP-producten gefocust is. Anderen zijn meer algemeen. Door de sterktes, zwaktes en visies van deze verkopers te bekijken kan ik ook een beter idee vormen van de RPA-oplossingen
 
-Je mag deze sectie nog verder onderverdelen in subsecties als dit de structuur van de tekst kan verduidelijken.
+\subsection{Veiligheid}
+\label{Veiligheid}
+Het fout automatiseren van taken en zo foute output produceren kan zowel werknemer als klant frustreren, dus wordt er ook onderzocht of men makkelijk een automation kan testen op foute output en deze oplossen.
+
+
+% Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein, d.w.z.\ een inleidende, doorlopende tekst over het onderzoeksdomein van je bachelorproef. Je steunt daarbij heel sterk op de professionele \emph{vakliteratuur}, en niet zozeer op populariserende teksten voor een breed publiek. Wat is de huidige stand van zaken in dit domein, en wat zijn nog eventuele open vragen (die misschien de aanleiding waren tot je onderzoeksvraag!)?
+
+% Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek?
+
+% Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Hykes2013}! Denk zeker goed na welke werken je refereert en waarom.
+
+% Draag zorg voor correcte literatuurverwijzingen! Een bronvermelding hoort thuis \emph{binnen} de zin waar je je op die bron baseert, dus niet er buiten! Maak meteen een verwijzing als je gebruik maakt van een bron. Doe dit dus \emph{niet} aan het einde van een lange paragraaf. Baseer nooit teveel aansluitende tekst op eenzelfde bron.
+
+% Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle nodige info aanwezig is om de bron terug te vinden (zoals uitvoerig besproken in de lessen Research Methods).
+
+% % Voor literatuurverwijzingen zijn er twee belangrijke commando's:
+% % \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
+% %   geen onderdeel is van de zin.
+% % \textcite{KEY} => Auteur (jaartal)  Gebruik dit als de auteursnaam wel een
+% %   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
+% %   ...'')
+
+% Je mag deze sectie nog verder onderverdelen in subsecties als dit de structuur van de tekst kan verduidelijken.
 
 %---------- Methodologie ------------------------------------------------------
 \section{Methodologie}%
 \label{sec:methodologie}
+Dit onderzoek zal bestaan uit 3 grote fases.
+\subsection{Fase 1: Interviews met Consultants}
+\label{Fase 1: Interviews met Consultants}
+In de eerste fase zullen er interviews met verschillende consultants uitgevoerd worden. Uit deze interviews zal afgeleid worden welke taken repetitief zijn en veel tijd in beslag nemen. Deze taken zullen dan opgelijst worden. Uit deze lijst zal ik dan kijken hoe makkelijk bepaalde taken geautomatiseerd kunnen worden en hoeveel tijd de Consultant hier mee zou kunnen winnen.
+Deze fase zal 3 weken in beslag nemen.
+\subsection{Fase 2: Literatuurstudie}
+\label{Fase 2: Literatuurstudie}
+In deze fase van de bachelorproef zal er een literatuurstudie uitgevoerd worden. In deze studie zal ik allereerst de mogelijkheden van Robotic Process Automation onderzoeken. Hiernaast zal ik ook de de verschillende Robotic Process Automation verdelers vergelijken en de positieve en negatieve punten oplijsten per verdeler.
+Deze fase zal 4 weken in beslag nemen.
+\subsection{Fase 3: Beslissing en Proof of Concept}
+\label{Fase 3: Beslissing en Proof of Concept}
+In de laatste fase van deze bachelorproef zal een process gekozen worden om te automatiseren. Ik zal ook een bepaalde RPA-verdeler kiezen en dus met deze technologie de automatisering uitwerken.
+Deze fase zal 4 weken in beslag nemen.
 
-Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor literatuurstudie, interviews met belanghebbenden (bv.~voor requirements-analyse), experimenten, simulaties, vergelijkende studie, risico-analyse, PoC, \ldots?
+% Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor literatuurstudie, interviews met belanghebbenden (bv.~voor requirements-analyse), experimenten, simulaties, vergelijkende studie, risico-analyse, PoC, \ldots?
 
-Valt je onderwerp onder één van de typische soorten bachelorproeven die besproken zijn in de lessen Research Methods (bv.\ vergelijkende studie of risico-analyse)? Zorg er dan ook voor dat we duidelijk de verschillende stappen terug vinden die we verwachten in dit soort onderzoek!
+% Valt je onderwerp onder één van de typische soorten bachelorproeven die besproken zijn in de lessen Research Methods (bv.\ vergelijkende studie of risico-analyse)? Zorg er dan ook voor dat we duidelijk de verschillende stappen terug vinden die we verwachten in dit soort onderzoek!
 
-Vermijd onderzoekstechnieken die geen objectieve, meetbare resultaten kunnen opleveren. Enquêtes, bijvoorbeeld, zijn voor een bachelorproef informatica meestal \textbf{niet geschikt}. De antwoorden zijn eerder meningen dan feiten en in de praktijk blijkt het ook bijzonder moeilijk om voldoende respondenten te vinden. Studenten die een enquête willen voeren, hebben meestal ook geen goede definitie van de populatie, waardoor ook niet kan aangetoond worden dat eventuele resultaten representatief zijn.
+% Vermijd onderzoekstechnieken die geen objectieve, meetbare resultaten kunnen opleveren. Enquêtes, bijvoorbeeld, zijn voor een bachelorproef informatica meestal \textbf{niet geschikt}. De antwoorden zijn eerder meningen dan feiten en in de praktijk blijkt het ook bijzonder moeilijk om voldoende respondenten te vinden. Studenten die een enquête willen voeren, hebben meestal ook geen goede definitie van de populatie, waardoor ook niet kan aangetoond worden dat eventuele resultaten representatief zijn.
 
-Uit dit onderdeel moet duidelijk naar voor komen dat je bachelorproef ook technisch voldoen\-de diepgang zal bevatten. Het zou niet kloppen als een bachelorproef informatica ook door bv.\ een student marketing zou kunnen uitgevoerd worden.
+% Uit dit onderdeel moet duidelijk naar voor komen dat je bachelorproef ook technisch voldoen\-de diepgang zal bevatten. Het zou niet kloppen als een bachelorproef informatica ook door bv.\ een student marketing zou kunnen uitgevoerd worden.
 
-Je beschrijft ook al welke tools (hardware, software, diensten, \ldots) je denkt hiervoor te gebruiken of te ontwikkelen.
+% Je beschrijft ook al welke tools (hardware, software, diensten, \ldots) je denkt hiervoor te gebruiken of te ontwikkelen.
 
-Probeer ook een tijdschatting te maken. Hoe lang zal je met elke fase van je onderzoek bezig zijn en wat zijn de concrete \emph{deliverables} in elke fase?
+% Probeer ook een tijdschatting te maken. Hoe lang zal je met elke fase van je onderzoek bezig zijn en wat zijn de concrete \emph{deliverables} in elke fase?
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwacht resultaat, conclusie}%
 \label{sec:verwachte_resultaten}
+\subsection{Verwacht resultaat}
+\label{Verwacht resultaat}
+Er wordt verwacht dat er in het klantenservice process verschillende repetitieve kleine taken zijn die gemakkelijk te automatiseren zijn. Hieruit zal dan een automatisering gekozen worden die veel impact zou kunnen hebben op de snelheid van dienstverlening. Deze automatisering zal dan uitgewerkt worden, en in het ideale scenario gebruikt worden door de consultants van delaware.
+\subsection{Verwachte conclusie}
+\label{Verwachte conclusie} 
+Robotic Process Automation zal waarschijnlijk niet alle repetitieve taken van menselijke werknemers overnemen, maar kan de klantervaring op een zeer efficiënte manier verbeteren. Dit doordat de consultant zich minder hoeft bezig te houden met het opzoeken van informatie, en zich hierdoor dus meer kan bezighouden met het effectief helpen van de klant. Het is een goedkope, snelle manier van automatiseren met een grote return of investment. De tool zelf staat ook nog in zijn kinderschoenen waardoor verwacht wordt dat de mogelijkheden van de tool nog zullen verbeteren.  
 
-Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de onderdelen van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet welk soort data je moet verzamelen en hoe je die moet meten.
 
-Wat heeft de doelgroep van je onderzoek aan het resultaat? Op welke manier zorgt jouw bachelorproef voor een meerwaarde?
+% Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de onderdelen van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet welk soort data je moet verzamelen en hoe je die moet meten.
 
-Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
+% Wat heeft de doelgroep van je onderzoek aan het resultaat? Op welke manier zorgt jouw bachelorproef voor een meerwaarde?
+
+% Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
 
