@@ -33,16 +33,38 @@
 % Wie zijn bachelorproef in het Nederlands schrijft, kan dit negeren, de inhoud
 % wordt niet in het document ingevoegd.
 
-\IfLanguageName{english}{%
-\selectlanguage{dutch}
-\chapter*{Samenvatting}
-\lipsum[1-4]
-\selectlanguage{english}
-}{}
+% \IfLanguageName{english}{%
+% \selectlanguage{dutch}
+% \chapter*{Samenvatting}
+% \lipsum[1-4]
+% \selectlanguage{english}
+% }{}
 
 %%---------- Samenvatting -----------------------------------------------------
 % De samenvatting in de hoofdtaal van het document
 
+% Daarom bestaat een abstract uit volgende componenten:
+%
+% - inleiding + kaderen thema
+% - probleemstelling
+% - (centrale) onderzoeksvraag
+% - onderzoeksdoelstelling
+% - methodologie
+% - resultaten (beperk tot de belangrijkste, relevant voor de onderzoeksvraag)
+% - conclusies, aanbevelingen, beperkingen
+
 \chapter*{\IfLanguageName{dutch}{Samenvatting}{Abstract}}
 
-\lipsum[1-4]
+De werking van een bedrijf bestaat uit honderden processen. Deze kunnen gaan van het aannemen van een nieuwe werknemer, het verkopen van een software licentie tot het dagelijks overzetten van honderd verkooporders van een Excel bestand naar een ERP systeem.
+Deze processen zijn zeer gevarieerd, zowel in hun lengte, complexiteit als in de toegevoegde waarde binnen het bedrijf. Het is duidelijk dat het laatstgenoemde proces, het overzetten van de verkooporders, een belangrijke maar vrij repetitieve taak is.
+De werknemer die deze taak moet uitvoeren verliest hier dagelijks serieus wat tijd aan, terwijl de meerwaarde voor het bedrijf hier relatief klein is.
+En net deze soort repetitieve taken zijn te automatiseren via Robotic Process Automation (RPA). RPA is een recente technologie die een menselijke gebruiker kan nabootsen en deze repetitieve taken feilloos kan uitvoeren via een hardware-toestel van de gebruiker.
+Maar is dit wel echt een optie binnen de bedrijfswereld? Hoe werkt deze nieuwe technologie precies en in welke bedrijfstakken kan deze gebruikt worden? Dit zijn allemaal logische vragen die elk bedrijf die denkt om RPA te implementeren zich ook zal stellen.
+Deze bachelorproef zal zich richten op het Belgische IT-consultancy bedrijf delaware en hun mogelijkheden om bepaalde processen tijdens hun klantenwerk te automatiseren via RPA.
+Concreet betekent dit dat er onderzocht zal worden waar en hoe RPA kan ingezet worden in het dagelijkse werkleven van de consultants.
+Om deze vraag te kunnen beantwoorden werd er eerst een grondige literatuurstudie gedaan naar de RPA technologie zelf, het soort processen dat in aanmerking komt voor automatisering en de verschillende verdelers van RPA software.
+Hierna werden verschillende interviews afgenomen met consultants van delaware om enerzijds hun interne kennis van RPA te testen en anderzijds processen te vinden die in aanmerking kwamen om geautomatiseerd te worden via RPA.
+Met de informatie die uit de literatuurstudie en de interviews kwam werd dan een specifiek proces en een specifieke RPA-verdeler geselecteerd om een Proof of Concept uit te werken.
+Wanneer deze Proof of Concept uitgewerkt was, werd deze getest door de consultant die het proces dagelijks moet uitvoeren.
+Hieruit kon afgeleid worden dat de automatisering het proces duidelijk sneller uitvoerde dan de consultant zelf, die ook een positieve reactie gaf over het gebruik van de automatisering.
+Hieruit kan afgeleid worden dat RPA zeker een grote meerwaarde kan bieden bij klantenwerk. Deze bachelorproef bewijst de voordelen van RPA en toont aan dat bedrijven er baat bij hebben om meer processen te automatiseren via deze techniek.

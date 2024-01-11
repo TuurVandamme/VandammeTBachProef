@@ -5,39 +5,43 @@
 \chapter{\IfLanguageName{dutch}{Inleiding}{Introduction}}%
 \label{ch:inleiding}
 
-% De inleiding moet de lezer net genoeg informatie verschaffen om het onderwerp te begrijpen en in te zien waarom de onderzoeksvraag de moeite waard is om te onderzoeken. In de inleiding ga je literatuurverwijzingen beperken, zodat de tekst vlot leesbaar blijft. Je kan de inleiding verder onderverdelen in secties als dit de tekst verduidelijkt. Zaken die aan bod kunnen komen in de inleiding~\autocite{Pollefliet2011}:
+De dagelijkse werking van bedrijven bestaat uit vele processen. Deze processen zijn vaak zeer gevarieerd, zowel in hun lengte als in hun toegevoegde waarde voor het bedrijf. Sommige van deze processen zijn zeer repetitief, hebben weinig menselijk inzicht nodig en brengen zelf weinig toegevoegde waarde toe aan het bedrijf.
+De werknemer die deze processen moet uitvoeren is vaak ook niet foutloos en onuitputtelijk, wat bij deze repetitieve processen kan leiden tot fouten en frustraties. Dit kan op zijn beurt de moraal van de werknemer verlagen, wat dan weer kan leiden tot een daling van de productiviteit \autocite{Liu2023}.
+Robotic Process Automation is een vrij recente technologie die deze repetitieve processen mogelijks kan automatiseren. Hierdoor hoeft de werknemer zich niet meer bezig te houden met deze repetitieve taken, maar kan hij zich focussen op meer winstgevende taken die meer menselijk inzicht nodig hebben en dus meer toegevoegde waarde kunnen brengen binnen een bedrijf.
+Starten met een nieuwe technologie binnen een bedrijf roept natuurlijk altijd wel vragen op. Hoe werkt deze technologie precies? Welke processen zijn wel en welke niet geschikt voor automatisering? Is het wel veilig? Hoe duur zal deze implementatie zijn? Etc. \autocite{Taulli2020}.
+Deze vragen zullen in deze bachelorproef beantwoord worden voor het bedrijf delaware. Specifiek zullen verschillende processen bekeken worden, waarvan er één zal uitgewerkt worden en getest worden in samenwerking met een consultant.
 
-\begin{itemize}
-  \item context, achtergrond
-  \item afbakenen van het onderwerp
-  \item verantwoording van het onderwerp, methodologie
-  \item probleemstelling
-  \item onderzoeksdoelstelling
-  \item onderzoeksvraag
-  \item \ldots
-\end{itemize}
 
 \section{\IfLanguageName{dutch}{Probleemstelling}{Problem Statement}}%
 \label{sec:probleemstelling}
 
-Uit je probleemstelling moet duidelijk zijn dat je onderzoek een meerwaarde heeft voor een concrete doelgroep. De doelgroep moet goed gedefinieerd en afgelijnd zijn. Doelgroepen als ``bedrijven,'' ``KMO's'', systeembeheerders, enz.~zijn nog te vaag. Als je een lijstje kan maken van de personen/organisaties die een meerwaarde zullen vinden in deze bachelorproef (dit is eigenlijk je steekproefkader), dan is dat een indicatie dat de doelgroep goed gedefinieerd is. Dit kan een enkel bedrijf zijn of zelfs één persoon (je co-promotor/opdrachtgever).
+Bij vele bedrijven wordt constant gezocht naar manieren om hun processen te optimaliseren en te versnellen. Wanneer deze processen repetitief zijn, kan Robotic Process Automation (RPA) voor deze bedrijven een goedkope, vlugge en efficiënte oplossing bieden.
+In deze bachelorproef wordt er onderzocht of Robotic Process Automation (RPA) wel degelijk bepaalde van deze repetitieve processen kan automatiseren voor het SAP development team binnen het bedrijf delaware. Delaware is een IT-consultancybedrijf dat verschillende ecosystemen, zoals SAP en Microsoft, aanbiedt aan zijn klanten. 
 
 \section{\IfLanguageName{dutch}{Onderzoeksvraag}{Research question}}%
 \label{sec:onderzoeksvraag}
 
-Wees zo concreet mogelijk bij het formuleren van je onderzoeksvraag. Een onderzoeksvraag is trouwens iets waar nog niemand op dit moment een antwoord heeft (voor zover je kan nagaan). Het opzoeken van bestaande informatie (bv. ``welke tools bestaan er voor deze toepassing?'') is dus geen onderzoeksvraag. Je kan de onderzoeksvraag verder specifiëren in deelvragen. Bv.~als je onderzoek gaat over performantiemetingen, dan 
+Zoals reeds hierboven aangehaald zal dit onderzoek zich focussen op RPA-automatiseringen binnen de dagelijkse werking van consultants binnen delaware. Concreet kan de onderzoeksvraag geformuleerd worden als:
+
+\begin{itemize}
+  \item Waar en hoe kan Robotic Process Automation ingezet worden tijdens klantenwerk?
+\end{itemize}
+
+Deze vraag is natuurlijk vrij breed, dus wordt deze hieronder opgedeeld in 2 deelvragen:
+
+\begin{itemize}
+    \item Welke taken kan Robotic Process Automation automatiseren?
+    \item Welke meerwaarde hebben deze automatiseringen?
+\end{itemize}
 
 \section{\IfLanguageName{dutch}{Onderzoeksdoelstelling}{Research objective}}%
 \label{sec:onderzoeksdoelstelling}
 
-Wat is het beoogde resultaat van je bachelorproef? Wat zijn de criteria voor succes? Beschrijf die zo concreet mogelijk. Gaat het bv.\ om een proof-of-concept, een prototype, een verslag met aanbevelingen, een vergelijkende studie, enz.
+Het hoofddoel van deze bachelorproef is het creëren van een Proof of Concept automatisering, die in het ideale geval ook in productie kan genomen worden binnen delaware.
+De Proof of Concept zal geslaagd zijn wanneer deze de doorlooptijd van het geselecteerde proces kan verminderen en de consultants van delaware overtuigd zijn van de meerwaarde van RPA binnen hun dagelijkse werkleven.
 
 \section{\IfLanguageName{dutch}{Opzet van deze bachelorproef}{Structure of this bachelor thesis}}%
 \label{sec:opzet-bachelorproef}
-
-% Het is gebruikelijk aan het einde van de inleiding een overzicht te
-% geven van de opbouw van de rest van de tekst. Deze sectie bevat al een aanzet
-% die je kan aanvullen/aanpassen in functie van je eigen tekst.
 
 De rest van deze bachelorproef is als volgt opgebouwd:
 
@@ -45,6 +49,8 @@ In Hoofdstuk~\ref{ch:stand-van-zaken} wordt een overzicht gegeven van de stand v
 
 In Hoofdstuk~\ref{ch:methodologie} wordt de methodologie toegelicht en worden de gebruikte onderzoekstechnieken besproken om een antwoord te kunnen formuleren op de onderzoeksvragen.
 
-% TODO: Vul hier aan voor je eigen hoofstukken, één of twee zinnen per hoofdstuk
+In Hoofdstuk~\ref{ch:interviews} worden de interviews met de verschillende consultants en de resultaten hiervan besproken.
+
+In Hoofdstuk~\ref{ch:proofOfConcept} wordt een keuze gemaakt voor enerzijds het proces en anderzijds de RPA-software die gebruikt zal worden om deze Proof of Concept te creëren. Hierna wordt de Proof of Concept uitgewerkt en getoetst aan de verwachtingen van de betrokken consultant.
 
 In Hoofdstuk~\ref{ch:conclusie}, tenslotte, wordt de conclusie gegeven en een antwoord geformuleerd op de onderzoeksvragen. Daarbij wordt ook een aanzet gegeven voor toekomstig onderzoek binnen dit domein.
